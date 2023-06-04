@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+
+}
+	
+#sobre,
+#formacao,
+#experiencia,
+#cargo {
+	text-align: justify;
+}
+
+#btnMostrarImagem,
+#btnGit, #button_formacao{
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #2BF0E1;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#btnMostrarImagem:hover,
+#btnGit:hover {
+	background-color: #5479FF;
+}
+
+#btnMostrarImagem:focus {
+	outline: none;
+}
+
+
+
+#email,
+#telefone,
+#formacao_para,
+#sobre_para,
+#experiencia_para,
+#cargo_para {
+	/* text-align: center;	 */
+	text-align: justify;
+	margin: 0 2%;
+}
+
+#perfil {
+	text-align: center;
+}
+
+#link-email,
+#link-fone,
+#ir_formacao,
+#ir_sobre,
+#ir_experiencia,
+#ir_cargo {
+	text-decoration: none;
+	color: #fff;
+}
+
+#nome {
+	text-align: justify;
+	font-size: 20px;
+}
+
+#cabecalho {
+	height: 10%;
+	background-color: rgb(58, 57, 57);
+}
+
+/*imagens flexiveis*/
+img {
+	max-width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+body,
+html {
+	background: #f1f1f1;
+	color: #fff;
+	height: 100%;
+	overflow: auto;
+}
+
+#principal {
+	/* Largura máxima */
+	max-width: 100%;
+
+	margin: 0 auto;
+	background: #fff;
+	
+	height: 100%;
+
+}
+
+
+
+#conteudo {
+	/* Largura */
+	width: 30%;
+	/* Alinha à esquerda */
+	float: left;
+	background-color: #3156d9;
+	height: 100%;
+}
+
+.interno {
+	padding: 10px;
+}
+
+#lateral {
+	/* Largura */
+	width: 70%;
+	/* Alinha à direita */
+	float: right;
+	background: #fff8ff;
+	
+	height: 100%;
+	color: #202124;
+}
+
+
+/*seletores para desktops*/
+@media screen and (max-width: 1128px) {
+	#conteudo {
+		width: 70%;
+		
+	}
+
+	#lateral {
+		width: 30%;
+		
+	}
+}
+
+/*seletores para tablets*/
+@media screen and (max-width: 768px) {
+	#conteudo {
+		width: 50%;
+		
+	}
+
+	#lateral {
+		width: 50%;
+	
+	}
+}
+
+/*seletores para celurares*/
+@media screen and (max-width: 520px) {
+	#conteudo {
+		width: 100%;
+		
+		float: none;
+		height: auto;
+	}
+
+	#lateral {
+		width: 100%;
+		
+		float: none;
+		height: auto;
+	}
+}
