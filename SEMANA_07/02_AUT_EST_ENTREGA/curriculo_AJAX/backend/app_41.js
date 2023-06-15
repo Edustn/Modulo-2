@@ -210,6 +210,6 @@ app.all('/realizacao', (req, res) => { // mudei a requisicao para formacao
 });
 
 
-app.listen(port, hostname, () => {
-  console.log(`Servidor rodando em http://${hostname}:${port}/`);
+app.listen(process.env.PORT, () => {
+  console.log(`Servidor rodando`);
 });

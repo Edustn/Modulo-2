@@ -15,7 +15,7 @@ $(document).ready(function () {
 });
 
 function TestGET() {
-    var url = "http://127.0.0.1:3000/formacao";
+    var url = "/formacao";
     var resposta;
 
     var xhttp = new XMLHttpRequest();
