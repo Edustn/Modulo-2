@@ -10,7 +10,7 @@ const port = 3000;
 const app = express();
 
 /* Colocar toda a parte estática no frontend */
-app.use(express.static("frontend/"));
+app.use(express.static("./frontend/"));
 
 /* Definição dos endpoints */
 /******** CRUD ************/
